@@ -7,10 +7,10 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
+            background-color: #050505;
+            color: #e6edf3;
             margin: 0;
-            padding: 40px;
+            padding: 40px 20px;
         }
         .container {
             max-width: 900px;
@@ -19,56 +19,66 @@
         header {
             text-align: center;
             margin-bottom: 50px;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 30px;
         }
         h1 {
-            color: #58a6ff;
-            font-size: 2.5rem;
+            color: #ffffff;
+            font-size: 2.8rem;
             margin-bottom: 10px;
+            letter-spacing: -0.5px;
         }
         .tagline {
             font-size: 1.2rem;
             color: #8b949e;
         }
         .project {
-            background-color: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 30px;
+            background-color: #121212;
+            border: 1px solid #262626;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 35px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
         }
         .project h2 {
             color: #58a6ff;
             margin-top: 0;
+            font-size: 1.8rem;
         }
-        .grid-images {
+        .grid-media {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 15px;
             margin: 20px 0;
         }
+        .media-card {
+            background-color: #1a1a1a;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
         img, video {
             width: 100%;
-            border-radius: 6px;
-            border: 1px solid #30363d;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        .media-label {
+            padding: 10px;
+            font-size: 0.85rem;
+            color: #8b949e;
+            text-align: center;
+            background: #121212;
+            border-top: 1px solid #262626;
         }
         ul {
             padding-left: 20px;
+            color: #c9d1d9;
         }
         li {
             margin-bottom: 8px;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #238636;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        .btn:hover {
-            background-color: #2ea043;
         }
     </style>
 </head>
@@ -77,37 +87,55 @@
     <div class="container">
         <header>
             <h1>Roblox Gameplay Engineer & Builder</h1>
-            <p class="tagline">Specializing in rapid prototyping, clean Luau scripting, UI design, and immersive environments.</p>
+            <p class="tagline">Specializing in rapid prototyping, clean Luau mechanics, immersive worlds, and high-performance UI systems.</p>
         </header>
 
-        <!-- Project 1: Survival Mechanics & Environment -->
+        <!-- Project: Live Development & Survival Systems -->
         <div class="project">
-            <h2>Survival Game Prototype & Environment Design</h2>
-            <p>Developed a high-performance survival loop inspired by games like <em>99 Nights</em>. Features dynamic server-side resource tracking, interactive tree-chopping mechanics, and real-time campfire fuel depletion meters.</p>
+            <h2>Survival Game Systems & Environment Building</h2>
+            <p>Engineered core survival loop features including real-time campfire fuel management, interactive object nodes, and optimized low-poly environment layouts.</p>
             
-            <div class="grid-images">
-                <img src="image_93a238.png" alt="Campfire and Fuel System">
-                <img src="image_9f06e2.jpg" alt="Low-Poly Park Environment">
-                <img src="image_9f066a.jpg" alt="Market Stalls Build">
+            <div class="grid-media">
+                <div class="media-card">
+                    <video autoplay loop muted playsinline>
+                        <source src="Roblox Studio 2026.09.15 - 21.50.36.01.mp4" type="video/mp4">
+                    </video>
+                    <div class="media-label">Studio Gameplay & Setup Loop</div>
+                </div>
+                <div class="media-card">
+                    <img src="image_93a238.png" alt="Campfire Fuel System">
+                    <div class="media-label">Campfire & Fuel Percentage UI</div>
+                </div>
+                <div class="media-card">
+                    <img src="image_9f06e2.jpg" alt="Low-Poly Park">
+                    <div class="media-label">Low-Poly Park Layout</div>
+                </div>
+                <div class="media-card">
+                    <img src="image_9f066a.jpg" alt="Market Stalls">
+                    <div class="media-label">Marketplace Stalls Build</div>
+                </div>
             </div>
 
             <ul>
-                <li><strong>Systems:</strong> Custom Luau resource gathering loops, ProximityPrompt triggers, and UI fuel percentage scaling.</li>
-                <li><strong>Building:</strong> Modular environment layout featuring optimized low-poly park assets and market zoning.</li>
+                <li><strong>Mechanics:</strong> Modular tree harvesting, ProximityPrompt triggers, and server-side stat sync.</li>
+                <li><strong>Environment:</strong> Clean structural zoning optimized for cross-platform stability.</li>
             </ul>
         </div>
 
-        <!-- Project 2: UI Design -->
+        <!-- Project: UI Design -->
         <div class="project">
-            <h2>Clean Scalable UI Systems</h2>
-            <p>Engineered clean, responsive user interface layouts designed to scale smoothly across PC, mobile, and console platforms.</p>
+            <h2>Scalable UI Design</h2>
+            <p>Developed crisp, responsive user interfaces built with strict aspect ratio constraints to fit seamlessly across PC, mobile, and console devices.</p>
             
-            <div class="grid-images">
-                <img src="image_9f022f.png" alt="Shop Menu UI">
+            <div class="grid-media">
+                <div class="media-card">
+                    <img src="image_9f022f.png" alt="Shop Menu UI">
+                    <div class="media-label">Shop Purchase Menu Modal</div>
+                </div>
             </div>
 
             <ul>
-                <li><strong>Features:</strong> Crisp aspect-ratio constraints, structured layouts for shop menus, and modal close patterns.</li>
+                <li><strong>UI Framework:</strong> Clean layout styling, structured modal frames, and intuitive user feedback interaction.</li>
             </ul>
         </div>
     </div>
