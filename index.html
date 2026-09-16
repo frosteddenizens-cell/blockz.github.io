@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Game Developer Portfolio</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            margin: 0;
+            padding: 40px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #8b949e;
+        }
+        .project {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 30px;
+        }
+        .project h2 {
+            color: #58a6ff;
+            margin-top: 0;
+        }
+        .grid-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        img, video {
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #238636;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #2ea043;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Roblox Gameplay Engineer & Builder</h1>
+            <p class="tagline">Specializing in rapid prototyping, clean Luau scripting, UI design, and immersive environments.</p>
+        </header>
+
+        <!-- Project 1: Survival Mechanics & Environment -->
+        <div class="project">
+            <h2>Survival Game Prototype & Environment Design</h2>
+            <p>Developed a high-performance survival loop inspired by games like <em>99 Nights</em>. Features dynamic server-side resource tracking, interactive tree-chopping mechanics, and real-time campfire fuel depletion meters.</p>
+            
+            <div class="grid-images">
+                <img src="image_93a238.png" alt="Campfire and Fuel System">
+                <img src="image_9f06e2.jpg" alt="Low-Poly Park Environment">
+                <img src="image_9f066a.jpg" alt="Market Stalls Build">
+            </div>
+
+            <ul>
+                <li><strong>Systems:</strong> Custom Luau resource gathering loops, ProximityPrompt triggers, and UI fuel percentage scaling.</li>
+                <li><strong>Building:</strong> Modular environment layout featuring optimized low-poly park assets and market zoning.</li>
+            </ul>
+        </div>
+
+        <!-- Project 2: UI Design -->
+        <div class="project">
+            <h2>Clean Scalable UI Systems</h2>
+            <p>Engineered clean, responsive user interface layouts designed to scale smoothly across PC, mobile, and console platforms.</p>
+            
+            <div class="grid-images">
+                <img src="image_9f022f.png" alt="Shop Menu UI">
+            </div>
+
+            <ul>
+                <li><strong>Features:</strong> Crisp aspect-ratio constraints, structured layouts for shop menus, and modal close patterns.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
